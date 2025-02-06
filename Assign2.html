@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brewed Awakening</title>
+    <link rel="stylesheet" href="Assign2.css">
+    <!-- Google Fonts Links For Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="#">Coffee<span>.</span></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">Menu</span>
+      </nav>
+    </header>
+    <section class="hero-section">
+      <div class="content">
+        <h2>Start Your Day With Fresh Coffee</h2>
+        <p>
+          Coffee is a popular and beloved beverage enjoyed by 
+          people around the world.Awaken your senses with a steaming cup of liquid motivation.
+        </p>
+        <p>"Coffee: because adulting is hard."</p>
+        <button>Order Now</button>
+      </div>
+    </section>
+    <!-- menu -->
+    <section id="menu">
+      <h2>Our Menu</h2>
+
+      <div class="menu-category">
+          <h3>Coffee Drinks</h3>
+          <div class="menu-items">
+              <!-- Coffee Item 1 -->
+              <div class="menu-card">
+                  <!-- <img src="espresso.jpg" alt="Espresso"> -->
+                  <h4>Espresso</h4>
+                  <p class="description">Concentrated coffee brewed by forcing hot water through finely-ground coffee beans.</p>
+                  <p class="price">$2.50</p>
+              </div>
+
+              <!-- Coffee Item 2 -->
+              <div class="menu-card">
+                  <img src="latte.jpg" alt="Latte">
+                  <h4>Latte</h4>
+                  <p class="description">Espresso mixed with steamed milk and topped with a thin layer of foam.</p>
+                  <p class="price">$3.50</p>
+              </div>
+
+              <!-- Coffee Item 3 -->
+              <div class="menu-card">
+                  <img src="cappuccino.jpg" alt="Cappuccino">
+                  <h4>Cappuccino</h4>
+                  <p class="description">Espresso with steamed milk and a thick layer of foamed milk.</p>
+                  <p class="price">$3.75</p>
+              </div>
+          </div>
+      </div>
+
+        <div class="menu-category">
+            <h3>breakfast</h3>
+            <div class="menu-items">
+                <div class="menu-card">
+                    <img src="sandwich.jpg" alt="Breakfast sandwich">
+                    <h4>Breakfast Sandwich</h4>
+                    <p class="description">Toasted English muffin with egg, cheese, and your choice of bacon or sausage.</p>
+                    <p class="price">$5.00</p>
+                </div>
+                <div class="menu-card">
+                    <img src="pancake.jpg" alt="Pancakes">
+                    <h4>Pancakes</h4>
+                    <p class="description">Stack of fluffy pancakes served with butter and syrup.</p>
+                    <p class="price">$6.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>varadakorlahalli@gmail.com</p>
+                    <p>7620816035</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"></a><img src="th.jpg" alt="">
+                        <a href=""></a><img src="wp.jpg" alt="">
+                        <a href=""></a><img src="in.jpg" alt="">
+                    </div>
+                    <!-- <a href="Resume vk (2).pdf" download class="btn btn2">Download CV</a> -->
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="'Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="Submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+    
+  </body>
+</html>
+Next, add the followin
